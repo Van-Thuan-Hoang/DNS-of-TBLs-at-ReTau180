@@ -1,0 +1,52 @@
+#
+# nek parameter file
+#
+[GENERAL]
+polynomialOrder = 7
+PnPnFormulation = yes
+minNumProcesses = 4
+
+startFrom = turbChannel.f00075 time=280.00181412371984
+stopAt = endTime
+endTime = 360.007
+
+dt = 0
+timeStepper = bdf2
+extrapolation = OIFS
+variableDt = yes
+targetCFL = 0.35
+
+writeControl = runTime
+writeInterval = 1
+# writeInterval = 0.01
+
+userParam01 = 200    # start time collecting statistics
+# userParam01 = 0
+userParam02 = 1     # writeInterval 1D statistics
+# userParam02 = 0.001
+
+# filtering = hpfrt
+# filterWeight = 10
+# filterCutoffRatio = 0.9
+
+[MESH]
+writeToFieldFile = yes
+
+[PROBLEMTYPE]
+#variableProperties = yes
+equation = incompNS
+
+[PRESSURE]
+preconditioner = semg_amg_hypre
+residualTol = 1e-4
+residualProj = yes
+
+[VELOCITY]
+residualTol = 1e-6
+density = 1
+viscosity = -2794
+
+#[TEMPERATURE]
+#rhoCp = 1.
+#conductivity = -10000
+#residualTol = 1e-6

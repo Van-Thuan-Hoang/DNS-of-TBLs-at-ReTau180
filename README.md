@@ -19,4 +19,8 @@ Convergence of Cf:
 
 ![convergence of Cf of DNS 100 million element mesh](https://github.com/VanThuan-Hoang/DNS-of-TBLs-at-ReTau180/assets/139791063/df62fe5f-d2a0-4ce8-83f9-f383b1ba28f5)
 
+Instantaneous velocity in the vertical plane:
+
+https://github.com/VanThuan-Hoang/DNS-of-TBLs-at-ReTau180/assets/139791063/c6d84cb9-f984-4c60-8780-dca27864c3d1
+
 Thanks,
